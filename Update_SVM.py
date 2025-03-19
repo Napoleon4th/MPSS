@@ -123,8 +123,8 @@ X_train = np.array(source_features + follow_up_features)
 X_train = X_train.reshape(X_train.shape[0], -1)
 y_train = np.array(source_labels + follow_up_labels)
 
-# clf = SVC(kernel='rbf', gamma='scale')  # use rbf
-clf = SVC(kernel='poly', degree=5, gamma='scale') # use polynomial
+clf = SVC(kernel='rbf', gamma='scale')  # use rbf
+# clf = SVC(kernel='poly', degree=5, gamma='scale') # use polynomial
 # clf = SVC(kernel='sigmoid', gamma='scale', coef0=1) # use sigmoid
 clf.fit(X_train, y_train)
 
