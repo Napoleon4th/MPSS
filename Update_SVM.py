@@ -15,7 +15,7 @@ from GoogLeNet_model import model,device # DNN for test
 # Parameters set up
 data_dir = '~' # Your image path, this file only has images, no subfolder
 output_excel = "UpdateSVM_metamorphic_test_results.xlsx"
-computational_process_times = 5 # K for computational processes and K-2 for optimization
+computational_process_times = 5 # K for MPs selection times
 total_select_MPs = 10000 # MPs selection number
 fail_pair_count = 0  # failed MPs count
 total_DNN_call = 0 # DNN calling times
