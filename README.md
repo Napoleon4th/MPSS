@@ -19,7 +19,15 @@ Here are the brief introduction of files:
   It is the zip file of data preprocessing result of CIFAR-10 test set. You may use it as a reference.  
   Saved_Data_10/    
 ​	├── P_0.pkl           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#source test cases original image data (M for test cases count)  
-​	├── P.pkl             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#follow-up test cases image data (N$\times$M, N for MRs number)  
+​	├── P.pkl             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#follow-up test cases image data (N\*M, N for MRs number)  
 ​	├── P_0_features.pkl  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#source test cases latent space features (M)  
-​	└── P_features.pkl    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#follow-up test cases latent space features (N$\times$M)  
+​	└── P_features.pkl    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#follow-up test cases latent space features (N\*M)    
 
+3、Extract_features.py  
+  It is for data prepocessing. The output should be similar to Saved_Data_10.zip.  
+
+4、GoogLeNet_model.py; ResNet_model.py; InceptionV3_model.py  
+  The model component was modularized into a separate Python file for better code organization. You may import it when needed.  
+
+5、Random_selection.py  
+  It is the code of *Random Selection* method compared with MPSS.
