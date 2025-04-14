@@ -191,7 +191,7 @@ def UpdateSVM(P_0, P, P_0_features, P_features, Label_0, Label, SVM, MRs, each_M
 
     # 5. Initialize average distance of MPs with np.inf
     M = len(MRs)  # Number of MRs
-    N = len(P_0)  # source 图片的数量
+    N = len(P_0)  # Number of source test cases
     Ave_Dis = np.full((M, N), np.inf)  # Set np.inf
 
     # 6. Iterate over SVM_Label_0 and SVM_Label to compute Ave_Dis
