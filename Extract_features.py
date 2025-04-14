@@ -29,7 +29,7 @@ vgg16.classifier = torch.nn.Sequential(*list(vgg16.classifier.children())[:-1])
 vgg16 = vgg16.to(device)
 vgg16.eval()
 
-print("1")
+# print("1")
 
 # Image paths
 image_paths = [os.path.join(data_dir, fname) for fname in os.listdir(data_dir) if
