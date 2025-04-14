@@ -23,11 +23,26 @@ Here are the brief introduction of files:
 ​	├── P_0_features.pkl  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#source test cases latent space features (M)  
 ​	└── P_features.pkl    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#follow-up test cases latent space features (N\*M)    
 
-3、Extract_features.py  
+3、Copy_pictures.py  
+  Since Metamorphic Test is for data without labels, we should combine all pictures from their label subfolders into a new fold.
+
+4、Extract_features.py  
   It is for data prepocessing. The output should be similar to Saved_Data_10.zip.  
 
-4、GoogLeNet_model.py; ResNet_model.py; InceptionV3_model.py  
+5、GoogLeNet_model.py; ResNet_model.py; InceptionV3_model.py  
   The model component was modularized into a separate Python file for better code organization. You may import it when needed.  
 
-5、Random_selection.py  
-  It is the code of *Random Selection* method compared with MPSS.
+6、Random_selection.py  
+  It is the code of *Random Selection* method compared with MPSS.  
+
+7、Uncertainty_selection.py  
+  It is the code of *Uncertainty Based Selection* method compared with MPSS.  
+
+8、Multi-objective_NSGA2.py  
+  It is the code of *NSGA-II Based Selection* method compared with MPSS.  
+
+9、image_transformations.py
+  It defines the details of MRs used in the experiment and it offers functions for importing.  
+
+10、Update_SVM.py  
+  It is the main code of MPSS.
