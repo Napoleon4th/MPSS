@@ -114,5 +114,11 @@ output_dir = os.path.join(os.getcwd(), "Saved_Data_10") # data preprocessing fol
 ```  
 Read Update_SVM.py in details for more information.
 
-### Baseline Method
+### Baseline Method  
+There are three baseline compared with MPSS: Random Selection; Uncertainty Based Selection; NSGA-II Based Selection. The number of selected MPs that violate MRs *# failed MPs* and # failed MPs/# DNN calls for cost-effectiveness evaluation can be calculated to illustrate the ability of different methods.
 
+__(1) Random Selection:__  
+Please read Random_selection.py and rewrite some parameters similiar to what you did in Update_SVM.py.
+
+__(2) Uncertainty Based Selection:__
+Please read Random_selection.py and rewrite some parameters similiar to what you did in Update_SVM.py.
