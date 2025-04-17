@@ -120,5 +120,8 @@ There are three baseline compared with MPSS: Random Selection; Uncertainty Based
 __(1) Random Selection:__  
 Please read Random_selection.py and rewrite some parameters similiar to what you did in Update_SVM.py.
 
-__(2) Uncertainty Based Selection:__
-Please read Random_selection.py and rewrite some parameters similiar to what you did in Update_SVM.py.
+__(2) Uncertainty Based Selection:__  
+Please read Uncertainty_selection.py and rewrite some parameters similiar to what you did in Update_SVM.py.
+
+__(3) NSGA-II Based Selection:__  
+Recently, Arrieta has proposed an NSGA-II based method to select follow-up test cases for DNN testing. You may go to https://dl.acm.org/doi/10.1145/3512290.3528697 for more details. We rewrote his code into Python to offer a fair comparison. Please read Multi-objective_NSGA2.py and rewrite some parameters similiar to what you did in Update_SVM.py.
